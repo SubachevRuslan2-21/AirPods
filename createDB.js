@@ -8,8 +8,8 @@ await client.connect();
 var database = client.db("airpods");
 database.dropDatabase()
 database = client.db("airpods");
-const pods = database.collection("pods");
-const result = await pods.insertMany(data);
+const pod = database.collection("pods");
+const result = await pod.insertMany(data);
 console.log(`${result.insertedCount} documents were inserted`);
 } finally {
 await client.close();
