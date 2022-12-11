@@ -1,0 +1,18 @@
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <% layout('./layout/page.ejs') %>
+        <h1>
+            <%= title %>
+        </h1>
+        <img src="<%= picture %>" alt="" />
+        <h2>Всё о наушниках: <%=desc%>
+        </h2>
+</body>
+
+</html>
